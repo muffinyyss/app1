@@ -1,6 +1,12 @@
 import React from "react";
-import MessageBox from "./state-func";
+import { userContext } from "./context";
+import Content from "./context-content";
+
 
 export default function App(){
-  return <MessageBox/>
+  return (
+    <userContext.Provider value={'Thitima Dengmee <3'}>
+      <Content/>
+    </userContext.Provider>
+  )
 }
